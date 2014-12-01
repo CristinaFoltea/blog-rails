@@ -30,6 +30,11 @@ gem 'annotate'
 gem 'ckeditor', '~> 4.0.6'
 gem 'paperclip'
 
+#for authorization
+gem 'cancan'
+# for authentication
+gem 'devise'
+
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
