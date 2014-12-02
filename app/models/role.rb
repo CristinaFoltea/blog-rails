@@ -1,14 +1,13 @@
 # == Schema Information
 #
-# Table name: articles
+# Table name: roles
 #
 #  id         :integer          not null, primary key
-#  title      :string(255)
-#  body       :text
-#  published  :boolean
+#  name       :string(255)
 #  created_at :datetime
 #  updated_at :datetime
 #
 
-class Article < ActiveRecord::Base
+class Role < ActiveRecord::Base
+  has_many :users
 end
