@@ -1,28 +1,20 @@
-== README
+== Blog-Rails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This project is just a default rails backend for a blog. Clone it / fork it and add your own frontend.
 
-Things you may want to cover:
+To install:
 
-* Ruby version
+* pull down the code
+* run `bundle install`
+* configure postgresql or switch to your prefered database in database.yml
+* run
+```
+rake db:create
+rake db:migrate
+rake db:seed
+rails s
+```
 
-* System dependencies
+This uses the cancan gem for authorization. In order to change roles for your blog, edit them in seeds.rb and reseed the database with `rake db:seed`
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+By default, the Admin role has full CRUD capabilities and Guests only have read Articles. To change this behavior or add permissions for other roles, edit ability.rb
