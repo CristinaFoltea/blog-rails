@@ -18,7 +18,7 @@ rails s
 
 This uses the cancan gem for authorization. In order to change roles for your blog, edit them in seeds.rb and reseed the database with `rake db:seed`
 
-By default, the Admin role has full CRUD capabilities and Guests only have read Articles. To change this behavior or add permissions for other roles, edit ability.rb
+By default, the Admin role has full CRUD capabilities and Guests can only read Articles. To change this behavior or add permissions for other roles, edit ability.rb
 
 Once you have registered a user, you can give your first user an Admin role with the following:
 
