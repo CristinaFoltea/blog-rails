@@ -1,4 +1,5 @@
-== Blog-Rails
+Blog-Rails
+===
 
 This project is just a default rails backend for a blog. Clone it / fork it and add your own frontend.
 
